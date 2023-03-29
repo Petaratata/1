@@ -1,3 +1,25 @@
+import json
+import os
+files = os.listdir("путь до папки")
+
+
+for file in files:
+____print(file) 
+____with open(os.getcwd() + "путь до папки" + file) as file_context:
+________parsed_file = ujson.load(file_context) 
+
+
+for i in files:
+    команда которая конвертирует джсон в цсв(i)
+    сохранение
+
+обьединение полученных таблиц
+
+
+
+
+
+
 1) Описать атрибуты используемых выборок, можно вкраце
 
 ====-если совпадет с заданием-====
