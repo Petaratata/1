@@ -1,3 +1,42 @@
+[Пересланное сообщение]
+  Данил Малых, 23 марта в 14:36
+  from tkinter import * 
+  from tkinter import messagebox 
+   
+  def ladno(): 
+   if 1 <= int(txt.get()) and int(txt.get())<=10: 
+   lbl.configure(text=df['Номер']) 
+   elif txt.get() == '': 
+   lbl.configure(text='') 
+   else: 
+   res = "Привет " + txt.get() 
+   lbl.configure(text=res) 
+   
+   
+   
+  window = Tk() 
+  window.title("Крутое задание") 
+  window.geometry('500x350') 
+  window.eval('tk::PlaceWindow . center') 
+   
+   
+   
+  lbl = Label(window, text="Напиши крутую цифру от 1 до 3") 
+  lbl.grid(column=0, row=0) 
+   
+  txt = Entry(window, width=10) 
+  txt.grid(column=0, row=2) 
+   
+  btn1 = Button(window, text="Клик!", command=ladno) 
+  btn1.grid(column=0, row=3) 
+   
+  window.mainloop()
+
+
+
+
+
+
 import json
 import os
 files = os.listdir("путь до папки")
